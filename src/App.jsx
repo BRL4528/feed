@@ -14,7 +14,7 @@ const posts = [
       role: 'CTO @ MidasCoporate'
     },
     content: [
-      { type: 'paragraph', content: 'Fala galeraa 🖐️',  },
+      { type: 'paragraph', content: 'ooouu Fala galeraa 🖐️',  },
       { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. è um projeto que fiz na nlw return, evento da Rocketseat',  },
       { type: 'link', content: 'jane.design/doctorcare',  }
     ],
@@ -48,6 +48,7 @@ function App() {
       <main>
         {posts.map(post =>   (
            <Post
+            key={post.id}
             author={post.author}
             content={post.content}
             publishedAt={post.publishedAt}
